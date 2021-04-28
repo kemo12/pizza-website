@@ -6,9 +6,9 @@ import {SidebarContainer,
     SidebarLink,
     SideBtnWrap,
     SideRoute} from "./SideBarElements";
-const Sidebar = () => {
+const Sidebar = ({isOpen,toggle}) => {
     return (
-        <SidebarContainer>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
           <Icon>
              <CloseIcon/> 
           </Icon>  

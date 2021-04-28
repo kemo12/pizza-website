@@ -7,14 +7,14 @@ import {FaTimes} from 'react-icons/fa';
 export const SidebarContainer =styled.aside`
 position:fixed;
 z-index:999;
-width:35px;
+width:350px;
 height:100%;
 background:#ffc500;
 display:grid;
 align-items:center;
 top:0;
 transition:0.3s ease-in-out;
-right:${({isOpen})=>(isOpen?'0':'-1000px')};
+right:${({isOpen})=>(isOpen ?'0':'-1000px')};
 
 @media screen and (max-width:400px){
     width:100%;
@@ -71,7 +71,7 @@ display:flex;
 justify-content:center;
 `;
 
-export const SideRoute=styled(Link)`
+export const SideRoute =styled(Link)`
 background:#e31837;
 white-space:nowrap;
 padding:16px 64px;
